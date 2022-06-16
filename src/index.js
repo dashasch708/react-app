@@ -1,6 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { ChakraProvider, extendTheme } from '@chakra-ui/react'
+
+// Screens
 import App from './screens/App'
 
 const theme = extendTheme({
