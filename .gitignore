@@ -1,0 +1,4 @@
+# Build path
+build
+# Libs
+node_modules
