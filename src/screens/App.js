@@ -1,10 +1,9 @@
 // import logo from './logo.svg'
+import { Heading, Image, Text, Flex, Center, Box } from '@chakra-ui/react'
 
-import { Heading, Image, Text } from '@chakra-ui/react'
 import pic1 from '../assets/imgs/pic1.png'
 import burger from '../assets/imgs/burger.png'
 import logo from '../assets/imgs/logo.png'
-import { Flex, Center, Box } from '@chakra-ui/react'
 
 function App() {
   return (
