@@ -10,7 +10,7 @@ import {
 import { HamburgerIcon } from '@chakra-ui/icons'
 
 import pic1 from '../assets/imgs/pic1.png'
-import logo from '../assets/imgs/logo.png'
+import logo from '../assets/imgs/logo.svg'
 import line1 from '../assets/imgs/line1.png'
 import line2 from '../assets/imgs/line2.png'
 import line3 from '../assets/imgs/line3.png'
