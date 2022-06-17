@@ -7,6 +7,8 @@ import {
   Center,
   Box,
 } from '@chakra-ui/react'
+import { HamburgerIcon } from '@chakra-ui/icons'
+
 import pic1 from '../assets/imgs/pic1.png'
 import logo from '../assets/imgs/logo.png'
 import line1 from '../assets/imgs/line1.png'
@@ -16,7 +18,6 @@ import bgPic2 from '../assets/imgs/bgPic2.png'
 import pic21 from '../assets/imgs/pic21.png'
 import pic22 from '../assets/imgs/pic22.png'
 import pic23 from '../assets/imgs/pic23.png'
-import { HamburgerIcon } from '@chakra-ui/icons'
 
 function App() {
   return (
