@@ -18,11 +18,25 @@ import bgPic2 from '../assets/imgs/bgPic2.png'
 import pic21 from '../assets/imgs/pic21.png'
 import pic22 from '../assets/imgs/pic22.png'
 import pic23 from '../assets/imgs/pic23.png'
+import pic3 from '../assets/imgs/pic3.png'
+import icon31 from '../assets/imgs/icon31.svg'
+import icon32 from '../assets/imgs/icon32.svg'
+import icon33 from '../assets/imgs/icon33.svg'
+import line4 from '../assets/imgs/line4.png'
+import line41 from '../assets/imgs/line41.png'
+import line42 from '../assets/imgs/line42.png'
+import icon4 from '../assets/imgs/icon4.svg'
+import pic51 from '../assets/imgs/pic51.png'
+import pic52 from '../assets/imgs/pic52.png'
+import pic53 from '../assets/imgs/pic53.png'
+import pic54 from '../assets/imgs/pic54.png'
+import pic55 from '../assets/imgs/pic55.png'
 
+const clr = '#E0E2E1'
 function App() {
   return (
     <div className='App'>
-      <Flex backgroundColor='#E0E2E1' position='relative'>
+      <Flex backgroundColor={clr} position='relative'>
         <Center
           position='absolute'
           top='1em'
@@ -44,8 +58,8 @@ function App() {
             <Text>+7 (985) 673-45-08</Text>
           </Flex>
         </Center>
-        <Center flex='4' backgroundColor='#E0E2E1'></Center>
-        <Box flex='7' bg='#E0E2E1'>
+        <Center flex='4' backgroundColor={clr}></Center>
+        <Box flex='7' bg={clr}>
           <Image
             src={pic1}
             allbackSrc='placeholdit.com/200x200'
@@ -63,7 +77,7 @@ function App() {
         <Center position='absolute' flexDirection='column' left='10%' top='38%'>
           <Center alignItems='center'>
             <Heading
-              fontSize='57px'
+              fontSize='55px'
               flex='1'
               justifyContent='flex-start'
               lineHeight='60px'
@@ -72,7 +86,7 @@ function App() {
             </Heading>
             <Text
               fontFamily='Montserrat Alternates'
-              fontSize='57px'
+              fontSize='55px'
               flex='2'
               justifyContent='flex-end'
               lineHeight='60px'
@@ -80,7 +94,7 @@ function App() {
               Калининград
             </Text>
           </Center>
-          <Heading fontSize='57px' lineHeight='60px'>
+          <Heading fontSize='55px' lineHeight='60px'>
             по выгодным ценам
           </Heading>
         </Center>
@@ -120,10 +134,10 @@ function App() {
         </Flex>
       </Flex>
 
-      <Flex position='relative' backgroundColor='#E0E2E1'>
+      <Flex position='relative' backgroundColor={clr}>
         <Box
           bgImage={bgPic2}
-          backgroundColor='#E0E2E1'
+          backgroundColor={clr}
           height='795px'
           width='100%'
         ></Box>
@@ -166,6 +180,171 @@ function App() {
         </Flex>
         <Flex position='absolute' w='100%' justifyContent='flex-end' top='76%'>
           <Image src={line3} />
+        </Flex>
+      </Flex>
+      <Flex backgroundColor={clr} position='relative'>
+        <Box flex='1' bg={clr}>
+          <Flex position='absolute' left='10%' top='12%'>
+            <Heading fontSize='40px'>Что мы предлагаем?</Heading>
+          </Flex>
+          <Flex position='absolute' alignItems='center' left='11%' top='30%'>
+            <Box>
+              <Image src={icon31} />
+            </Box>
+            <Box ml='25px'>
+              <Heading fontSize='24px' mb='10px'>
+                Трансфер туда и обратно
+              </Heading>
+              <Text fontSixe='19px'>Наши сотрудники помогут с</Text>
+              <Text fontSixe='19px'>оформлением авиабилетов.</Text>
+            </Box>
+          </Flex>
+          <Flex position='absolute' alignItems='center' left='11%' top='49%'>
+            <Box>
+              <Image src={icon32} />
+            </Box>
+            <Box ml='25px'>
+              <Heading fontSize='24px' mb='10px'>
+                Проживание в отеле
+              </Heading>
+              <Text fontSixe='19px'>Проживание в трехзвездочном отеле с </Text>
+              <Text fontSixe='19px'>завтраками - все для вашего комфорта.</Text>
+            </Box>
+          </Flex>
+          <Flex position='absolute' alignItems='center' left='11%' top='68%'>
+            <Box>
+              <Image src={icon33} />
+            </Box>
+            <Box ml='25px'>
+              <Heading fontSize='24px' mb='10px'>
+                Свободное время
+              </Heading>
+              <Text fontSixe='19px'>Вы сами выбираете программу своего</Text>
+              <Text fontSixe='19px'>путешествия, а мы лишь помогаем в </Text>
+              <Text fontSixe='19px'>реализации ваших идей!</Text>
+            </Box>
+          </Flex>
+        </Box>
+        <Box flex='1' bg={clr}>
+          <Image src={pic3} height='100vh' w='50vw' />
+        </Box>
+        <Flex position='absolute' w='100%' justifyContent='flex-end' top='82%'>
+          <Image src={line4} />
+        </Flex>
+      </Flex>
+      <Flex backgroundColor={clr} position='relative' h='706px'>
+        <Flex position='absolute' top='5%'>
+          <Image src={line41} />
+        </Flex>
+        <Center w='100vw' h='20vh'>
+          <Heading fontSize='40px' m='73px'>
+            Как это работает?
+          </Heading>
+        </Center>
+        <Flex
+          position='absolute'
+          flexWrap='wrap'
+          gap='62px 127px'
+          left='7%'
+          right='9%'
+          top='25%'
+        >
+          <Flex>
+            <Box>
+              <Image src={icon4} mt='4px' />
+            </Box>
+            <Box ml='21px'>
+              <Heading fontSize='24px' mb='10px'>
+                {' '}
+                1. Вы заполняете анкету
+              </Heading>
+              <Text fontSize='19px'>
+                Это поможет нашей команде узнать даты и{' '}
+              </Text>
+              <Text fontSize='19px'>продолжительность поездки, город</Text>
+              <Text fontSize='19px'>отправления и предпочтительный досуг.</Text>
+              <Text fontSize='19px'>
+                Далее на основе ваших предпочтений будет
+              </Text>
+              <Text fontSize='19px'>сформирован ваш особенный тур!</Text>
+            </Box>
+          </Flex>
+          <Flex ml='39px'>
+            <Box>
+              <Image src={icon4} mt='4px' />
+            </Box>
+            <Box ml='21px'>
+              <Heading fontSize='24px' mb='10px'>
+                2. Мы подбираем персональный тур
+              </Heading>
+              <Text fontSize='19px'>Вам не нужно беспокоиться о покупке</Text>
+              <Text fontSize='19px'>
+                билетов, бронировании отеля и построении
+              </Text>
+              <Text fontSize='19px'>
+                маршрута - наша команда сделает это за вас,{' '}
+              </Text>
+              <Text fontSize='19px'>предложив вам несколько вариантов!</Text>
+            </Box>
+          </Flex>
+          <Flex>
+            <Box>
+              <Image src={icon4} mt='4px' />
+            </Box>
+            <Box ml='21px'>
+              <Heading fontSize='24px' mb='10px'>
+                3. Мы согласовываем поездку с вами
+              </Heading>
+              <Text fontSize='19px'>До вашего волшебного отдыха осталось</Text>
+              <Text fontSize='19px'>
+                несколько шагов - вы выбираете наиболее
+              </Text>
+              <Text fontSize='19px'>
+                удобные билеты, подтверждаете выбранный
+              </Text>
+              <Text fontSize='19px'>
+                отель и вносите оплату - электронные билеты
+              </Text>
+              <Text fontSize='19px'>и подтверждение бронирования будут на</Text>
+              <Text fontSize='19px'>вашей почте!</Text>
+            </Box>
+          </Flex>
+          <Flex>
+            <Box>
+              <Image src={icon4} mt='4px' />
+            </Box>
+            <Box ml='21px'>
+              <Heading fontSize='24px' mb='10px'>
+                4. Вы получаете уникальный чек-лист
+              </Heading>
+              <Text fontSize='19px'>Мы отправим вам уникальный чек-лист с</Text>
+              <Text fontSize='19px'>местами для посещения. Мы учитываем</Text>
+              <Text fontSize='19px'>
+                предпочтения каждого клиента, поэтому эти
+              </Text>
+              <Text fontSize='19px'>места точно вам понравятся!</Text>
+            </Box>
+          </Flex>
+        </Flex>
+        <Flex position='absolute' w='100%' justifyContent='flex-end' top='88%'>
+          <Image src={line42} />
+        </Flex>
+      </Flex>
+      <Flex position='relative' bg={clr} h='100vh'>
+        <Flex position='absolute' left='10%' top='17%'>
+          <Image src={pic51} dropShadow='0px 4px 30px rgba(0, 0, 0, 0.19)' />
+        </Flex>
+        <Flex position='absolute' left='12%' top='60%'>
+          <Image src={pic52} dropShadow='0px 4px 30px rgba(0, 0, 0, 0.19)' />
+        </Flex>
+        <Flex position='absolute' left='39%' top='18%'>
+          <Image src={pic53} dropShadow='0px 4px 30px rgba(0, 0, 0, 0.19)' />
+        </Flex>
+        <Flex position='absolute' right='11%' top='6%'>
+          <Image src={pic54} dropShadow='0px 4px 30px rgba(0, 0, 0, 0.19)' />
+        </Flex>
+        <Flex position='absolute' right='10%' top='46%'>
+          <Image src={pic55} dropShadow='0px 4px 30px rgba(0, 0, 0, 0.19)' />
         </Flex>
       </Flex>
     </div>
