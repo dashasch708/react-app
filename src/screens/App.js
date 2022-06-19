@@ -6,11 +6,17 @@ import {
   Flex,
   Center,
   Box,
+  FormControl,
+  FormLabel,
+  FormErrorMessage,
+  FormHelperText,
+  Input,
 } from '@chakra-ui/react'
 import { HamburgerIcon } from '@chakra-ui/icons'
 
 import pic1 from '../assets/imgs/pic1.png'
 import logo from '../assets/imgs/logo.svg'
+import logoWh from '../assets/imgs/logoWh.svg'
 import line1 from '../assets/imgs/line1.png'
 import line2 from '../assets/imgs/line2.png'
 import line3 from '../assets/imgs/line3.png'
@@ -31,6 +37,11 @@ import pic52 from '../assets/imgs/pic52.png'
 import pic53 from '../assets/imgs/pic53.png'
 import pic54 from '../assets/imgs/pic54.png'
 import pic55 from '../assets/imgs/pic55.png'
+import line6 from '../assets/imgs/line6.png'
+import pic6 from '../assets/imgs/pic6.png'
+import pic61 from '../assets/imgs/pic61.png'
+import pic62 from '../assets/imgs/pic62.png'
+import pic63 from '../assets/imgs/pic63.png'
 
 const clr = '#E0E2E1'
 function App() {
@@ -137,6 +148,7 @@ function App() {
       <Flex position='relative' backgroundColor={clr}>
         <Box
           bgImage={bgPic2}
+          backgroundSize='cover'
           backgroundColor={clr}
           height='795px'
           width='100%'
@@ -236,7 +248,7 @@ function App() {
         <Flex position='absolute' top='5%'>
           <Image src={line41} />
         </Flex>
-        <Center w='100vw' h='20vh'>
+        <Center w='100vw' h='25vh'>
           <Heading fontSize='40px' m='73px'>
             Как это работает?
           </Heading>
@@ -330,6 +342,7 @@ function App() {
           <Image src={line42} />
         </Flex>
       </Flex>
+
       <Flex position='relative' bg={clr} h='100vh'>
         <Flex position='absolute' left='10%' top='17%'>
           <Image src={pic51} dropShadow='0px 4px 30px rgba(0, 0, 0, 0.19)' />
@@ -345,6 +358,149 @@ function App() {
         </Flex>
         <Flex position='absolute' right='10%' top='46%'>
           <Image src={pic55} dropShadow='0px 4px 30px rgba(0, 0, 0, 0.19)' />
+        </Flex>
+      </Flex>
+
+      <Flex
+        position='relative'
+        bg={clr}
+        h='480px'
+        backgroundImage={pic6}
+        backgroundSize='cover'
+      >
+        <Flex position='absolute' w='100%' justifyContent='flex-end' top='9%'>
+          <Image src={line6} />
+        </Flex>
+        <Flex position='absolute' left='10%' flexDirection='column' top='14%'>
+          <Heading fontSize='40px' mb='30px'>
+            Наши партнеры
+          </Heading>
+          <Text fontSize='19px'>
+            Мы сотрудничаем только с лучшими, чтобы ваш отдых прошел как по
+            маслу!{' '}
+          </Text>
+        </Flex>
+        <Flex
+          position='absolute'
+          alignItems='center'
+          left='22%'
+          top='48%'
+          columnGap='125px'
+        >
+          <Image src={pic61} w='168px' h='168px' />
+          <Image src={pic62} w='168px' h='168px' />
+          <Image src={pic63} w='266px' h='132px' />
+        </Flex>
+      </Flex>
+
+      <Flex position='relative' bgColor='#3D3D3D' h='78vh'>
+        <Flex position='absolute' left='10%' top='45%'>
+          <Image src={logoWh} />
+        </Flex>
+        <Flex flexDirection='column' alignItems='flex-start' m='10% 34%'>
+          <Button
+            variant='link'
+            color='white'
+            fontSize='13px'
+            fontWeight='light'
+            mb='18px'
+          >
+            Главная
+          </Button>
+          <Button
+            variant='link'
+            color='white'
+            fontSize='13px'
+            fontWeight='light'
+            mb='18px'
+          >
+            Туры
+          </Button>
+          <Button
+            variant='link'
+            color='white'
+            fontSize='13px'
+            fontWeight='light'
+            mb='18px'
+          >
+            Отели
+          </Button>
+          <Button
+            variant='link'
+            color='white'
+            fontSize='13px'
+            fontWeight='light'
+            mb='18px'
+          >
+            Достопримечательности
+          </Button>
+          <Button
+            variant='link'
+            color='white'
+            fontSize='13px'
+            fontWeight='light'
+            mb='18px'
+          >
+            FAQ
+          </Button>
+          <Button
+            variant='link'
+            color='white'
+            fontSize='13px'
+            fontWeight='light'
+            mb='18px'
+          >
+            Возврат
+          </Button>
+        </Flex>
+        <Flex
+          position='absolute'
+          flexDirection='column'
+          right='10%'
+          top='23%'
+          mb='150px'
+        >
+          <Heading fontSize='24px' color='white' mb='21px'>
+            Подпишитесь на рассылку
+          </Heading>
+          <Text fontSize='11px' color='white'>
+            Дарим скидку 5% за подписку на новости! Подпишитесь, чтобы узнавать{' '}
+          </Text>
+          <Text fontSize='11px' color='white' mb='23px'>
+            о самых актуальных и выгодных поездках.
+          </Text>
+          <FormControl isRequired mb='21px'>
+            <Input id='first-name' placeholder='Имя' fontSize='11px' />
+          </FormControl>
+          <FormControl isRequired mb='23px'>
+            <Input
+              id='email'
+              type='email'
+              placeholder='E-mail'
+              fontSize='11px'
+            />
+          </FormControl>
+          <Box
+            as='button'
+            h='35px'
+            w='169px'
+            borderRadius='7px'
+            bg='black'
+            fontSize='10px'
+            fontWeight='bold'
+            color='white'
+            boxShadow='6px 4px 13px rgba(0, 0, 0, 0.34)'
+            _hover={{
+              boxShadow: '8px 6px 15px rgba(0, 0, 0, 0.54)',
+            }}
+          >
+            Подписаться
+          </Box>
+        </Flex>
+        <Flex position='absolute' left='44%' bottom='4%'>
+          <Text fontSize='9px' color='white'>
+            OnTour © 2021 Все права защищены
+          </Text>
         </Flex>
       </Flex>
     </div>
