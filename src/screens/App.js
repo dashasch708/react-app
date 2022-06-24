@@ -9,7 +9,6 @@ import Frame2 from '../components/Frame2'
 // import Frame7 from '../components/Frame7'
 
 function App() {
-  const breakpoints = ['320px', '1440px']
   useEffect(() => {
     window.scroll(0, 0)
   }, [])
