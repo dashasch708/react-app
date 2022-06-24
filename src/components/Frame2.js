@@ -12,14 +12,20 @@ export default function Frame2() {
   return (
     <Flex
       bgImage={{ base: 'none', lg: bgPic2 }}
+      h='122vh'
       backgroundSize='cover'
       backgroundColor={clr}
       direction='column'
     >
-      {/* Images */}
-      <Flex>
+      <Flex direction={{ base: 'column', lg: 'row' }}>
+        {/* Images */}
         <Flex>
-          <Flex direction='column' flex='2'>
+          <Flex
+            direction='column'
+            flex={{ base: '2', lg: 'none' }}
+            mt={{ base: '1em', lg: '1.5em' }}
+            ml={{ base: 'none', lg: '1.5em' }}
+          >
             <Box>
               <Image
                 maxH={{ base: 'unset', lg: '700px' }}
@@ -37,20 +43,22 @@ export default function Frame2() {
               />
             </Box>
           </Flex>
-          <Box flex={3}>
+          <Box flex={{ base: '3', lg: 'none' }}>
             <Image
               maxH={{ base: 'unset', lg: '700px' }}
+              mt={{ base: '2em', lg: '4em' }}
               src={pic21}
               dropShadow='0px 4px 30px rgba(0, 0, 0, 0.19)'
             />
           </Box>
         </Flex>
-        <Flex direction='column'>
-          <Flex
-            flexDirection='column'
-            alignItems={{ base: 'flex-start', lg: 'flex-end' }}
-            pl='10%'
-          >
+
+        {/* Text */}
+        <Flex
+          direction='column'
+          alignItems={{ base: 'flex-start', lg: 'flex-end' }}
+        >
+          <Flex flexDirection='column' pt={{ base: '10%', lg: '27%' }} px='4%'>
             <Heading size={{ base: 'lg', lg: '2xl' }}>
               Калининград - маленькая
             </Heading>
@@ -58,18 +66,26 @@ export default function Frame2() {
               Европа прямо в России
             </Heading>
           </Flex>
-          <Flex flexDirection='column' alignItems='flex-end' my={4} pl='10%'>
+          <Flex
+            flexDirection='column'
+            my={{ base: '1em', lg: '2em' }}
+            ml={{ base: 'none', lg: '30%' }}
+            px='4%'
+          >
             <Text fontSize={{ base: 'md', lg: 'xl' }}>
               Калининградская область богата историческими зданиями в
               европейском стиле, а также уникальной флорой Балтийского моря!
               Посетите Калининградскую область с нашим сервисом On tour!
             </Text>
           </Flex>
+          <Flex
+            w='100%'
+            justifyContent='flex-end'
+            mt={{ base: '1.5em', lg: '5em' }}
+          >
+            <Image src={line3} />
+          </Flex>
         </Flex>
-      </Flex>
-      <Spacer />
-      <Flex w='100%' justifyContent='flex-end'>
-        <Image src={line3} />
       </Flex>
     </Flex>
   )

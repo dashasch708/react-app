@@ -65,7 +65,7 @@ export default function Frame1() {
 
         <Flex w='100%' justifyContent='flex-end' top='90%'>
           <Box>
-            <Image src={line1} />
+            <Image src={line1} mb='1.5em' />
           </Box>
         </Flex>
       </Flex>
