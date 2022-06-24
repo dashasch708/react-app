@@ -12,8 +12,6 @@ import FooterButtons from '../components/FooterButtons'
 
 import logoWh from '../assets/imgs/logoWh.svg'
 
-const clr = '#E0E2E1'
-
 export default function Frame7() {
   const btns = [
     { text: 'Главная', link: '/' },
