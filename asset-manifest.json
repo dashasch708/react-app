@@ -1,28 +1,19 @@
 {
   "files": {
-    "main.js": "/react-app/static/js/main.795fb2be.js",
+    "main.js": "/react-app/static/js/main.10c57f33.js",
     "static/media/bgPic2.png": "/react-app/static/media/bgPic2.a9736184c6cd6a7d4774.png",
+    "static/media/picF2.png": "/react-app/static/media/picF2.aee94b7ce93a6cc3f758.png",
     "static/media/pic1.png": "/react-app/static/media/pic1.39a55c5e570e2db26b2f.png",
-    "static/media/pic3.png": "/react-app/static/media/pic3.9e871948ccb2f865aaa7.png",
-    "static/media/pic6.png": "/react-app/static/media/pic6.284c9e7980a5596f1376.png",
+    "static/media/picF1.png": "/react-app/static/media/picF1.2aa2dd4b9ddb18a3242b.png",
     "static/media/pic21.png": "/react-app/static/media/pic21.19a9a41bc42e0206573c.png",
-    "static/media/pic53.png": "/react-app/static/media/pic53.ced64b50b2d6781b7670.png",
     "static/media/pic22.png": "/react-app/static/media/pic22.e1131a8118f14df2b5bf.png",
     "static/media/pic23.png": "/react-app/static/media/pic23.51289420b797e1d9d863.png",
-    "static/media/pic55.png": "/react-app/static/media/pic55.e4ffdee1f47363ffe71e.png",
-    "static/media/pic51.png": "/react-app/static/media/pic51.d5acfd42860f9b41edc8.png",
-    "static/media/pic52.png": "/react-app/static/media/pic52.444d9500bd9a9dbc9377.png",
-    "static/media/pic54.png": "/react-app/static/media/pic54.496cdfd19bf7a9b3841a.png",
     "static/media/logo.svg": "/react-app/static/media/logo.b42208eba9f27c7589156bd5b1af156a.svg",
     "static/media/logoWh.svg": "/react-app/static/media/logoWh.a70609c74bf1a97a077685880782bb00.svg",
-    "static/media/icon31.svg": "/react-app/static/media/icon31.e0ecd9853e672ef108eb4b6871a27783.svg",
-    "static/media/icon33.svg": "/react-app/static/media/icon33.67780b77829544cad170aaf640fa0f13.svg",
     "index.html": "/react-app/index.html",
-    "static/media/icon32.svg": "/react-app/static/media/icon32.34b56efb1b1fa64730ca0fe831bd9d49.svg",
-    "static/media/icon4.svg": "/react-app/static/media/icon4.5d6e5b99e157df3304f3b3bed3c2c7d5.svg",
-    "main.795fb2be.js.map": "/react-app/static/js/main.795fb2be.js.map"
+    "main.10c57f33.js.map": "/react-app/static/js/main.10c57f33.js.map"
   },
   "entrypoints": [
-    "static/js/main.795fb2be.js"
+    "static/js/main.10c57f33.js"
   ]
 }
