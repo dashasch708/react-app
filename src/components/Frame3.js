@@ -15,19 +15,19 @@ export default function Frame3() {
     {
       head: 'Трансфер туда и обратно',
       text: 'Наши сотрудники помогут с оформлением авиабилетов.',
-      icon: { icon31 },
+      icon: icon31,
       wid: '1.7em',
     },
     {
       head: 'Проживание в отеле',
       text: 'Проживание в трехзвездочном отеле с завтраками - все для вашего комфорта.',
-      icon: { icon32 },
+      icon: icon32,
       wid: '2.5em',
     },
     {
       head: 'Свободное время',
       text: 'Вы сами выбираете программу своего путешествия, а мы лишь помогаем в реализации ваших идей!',
-      icon: { icon33 },
+      icon: icon33,
       wid: '3.5em',
     },
   ]
@@ -71,7 +71,7 @@ export default function Frame3() {
           w={{ base: '100%', lg: 'auto' }}
           justifyContent='flex-end'
           position='absolute'
-          mt={{ base: '18em', lg: '37em' }}
+          mt={{ base: '17em', lg: '37em' }}
           ml={{ base: '1.7em', lg: '29em' }}
         >
           <Image src={line4} />

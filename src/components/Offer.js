@@ -5,12 +5,12 @@ export default function Offer({ head, text, icon, wid }) {
     <Flex
       alignItems='center'
       my={{ base: '1em', lg: '1.5em' }}
-      px={{ base: '4%', lg: '2%' }}
+      px={{ base: '4%', lg: '4%' }}
     >
       <Box>
         <Image src={icon} w={wid} />
       </Box>
-      <Box mx='1em' px={{ base: 'none', lg: '4em' }}>
+      <Box mx='1em' px={{ base: 'none', lg: '2em' }}>
         <Heading
           fontSize={{ base: 'xl', lg: '2xl' }}
           mb={{ base: 'none', lg: '0.6em' }}

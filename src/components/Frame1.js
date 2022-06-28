@@ -8,6 +8,7 @@ import {
   Stack,
   Spacer,
   Box,
+  Link,
 } from '@chakra-ui/react'
 import { HamburgerIcon } from '@chakra-ui/icons'
 
@@ -50,7 +51,7 @@ export default function Frame1() {
             display={{ base: 'none', lg: 'flex' }}
             justifyContent='flex-end'
           >
-            <Text>+7 (985) 673-45-08</Text>
+            <Link href='tel:+79856734508'>+7 (985) 673-45-08</Link>
           </Flex>
         </Center>
         <Flex top='25%'>
