@@ -1,4 +1,4 @@
-import { Heading, Image, Text, Flex, Box, Center } from '@chakra-ui/react'
+import { Heading, Image, Flex, Center } from '@chakra-ui/react'
 
 import line41 from '../assets/imgs/line41.png'
 import line42 from '../assets/imgs/line42.png'
